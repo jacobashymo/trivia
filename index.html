@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Stogie Trivia</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="trivia.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="splashscreen">
+        <div class="splashBox">
+            <h3>Welcome to</h3>
+            <h1>Stogie Trivia!</h1>
+            <hr />
+            <p><strong>You have 90 seconds to guess 10 questions.</strong></p>
+            <br />
+            <p><strong>Click To Start</strong></p>
+            <button type="button" id="start-btn" class="btn btn-primary black-background white">Light it up.</button>
+        </div>
+    </div>
+
+    <div id="answerScreen">
+        <div class="splashBox2">
+            <h2>Lets see how you did</h2>
+            <hr />
+            <p id="correctScreen">Correct Answers: </p>
+            <p id="wrongScreen">Wrong Answers: </p>
+        </div>
+    </div>
+
+
+    <div id="timesUp">
+        <div class="wrongBox">
+            <h2 class="up">Times Up!</h2>
+            <hr />
+            <p>Here's youre score:</p>
+            <p id="correctTimesUp">Correct Answers: </p>
+            <p id="wrongTimesUp">Wrong Answers: </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>Stogie Trivia!</header>
+        <div class="row timeRemain">Time Remaining:
+            <div id="time-remain">90</div>
+        </div>
+
+        <div class="questions">
+            <button type="button" class="btn btn-primary black-background white" id="sub-but">Submit</button>
+        </div>
+
+    </div>
+    <script src="trivia.js"></script>
+</body>
+
+</html>
